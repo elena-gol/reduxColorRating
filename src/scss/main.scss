@@ -1,0 +1,30 @@
+$curious-blue-color: #364760;
+
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: $curious-blue-color;
+    text-align: center;
+}
+
+p {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+button {
+    cursor: pointer;
+}
+
+#root {
+    width: 1170px;
+    margin: 0 auto;
+}

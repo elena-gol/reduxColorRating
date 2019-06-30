@@ -1,0 +1,50 @@
+$red: #ff3333;
+$dark-red: #cc0000;
+$white: #fff;
+
+.color-item {
+    display: inline-block;    
+    width: 20%;
+    padding: 10px;    
+
+    &__wrapper {
+        border: 1px solid #ccc;
+    }
+
+    &__name {
+        padding: 8px 10px;
+        font-size: 14px;
+        text-align: center;        
+        
+        &::first-letter {
+            text-transform: uppercase;
+        }
+    }
+
+    &__color {
+        position: relative;
+        height: 100px;
+        margin-bottom: 20px;
+    }
+
+    &__remove-button {
+        display: none;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        min-width: 60%;
+        padding: 7px 15px 8px;
+        border: none;
+        border-radius: 3px;
+        background-color: $red;
+        box-shadow: 1px 1px 0px 1px $dark-red;
+        color: $white;
+        font-weight: bold;
+        text-align: center;
+    }
+    
+    &:hover &__remove-button {
+        display: block;
+    }
+}

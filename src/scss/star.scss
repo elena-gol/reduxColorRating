@@ -1,0 +1,36 @@
+$pizazz-color: #ff9100;
+$gray-color: #808080;
+
+.star {
+    display: inline-block;
+    height: 22px;
+    width: 22px;
+    margin: -1px;
+    padding: 2px;
+    color: $gray-color;
+    cursor: pointer;
+
+    &::before {
+        content: "\f005";
+        font-family: FontAwesome;
+        font-size: 17px;
+    }
+
+    &.selected {
+        color: $pizazz-color;
+    }
+}
+
+.star-rating {
+    text-align: center;
+
+    &::after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+
+    &__description {
+        font-size: 14px;
+    }
+}
