@@ -1,2 +1,2 @@
 # redux Color Rating
-[Demo](https://elena-gol.github.io/reduxColorRating/)
+[Demo](https://lena-gol.github.io/reduxColorRating/)
